@@ -221,14 +221,7 @@ export default function PublicReviewPageClient({ business }) {
                           >
                             {isSelected && <Check className="w-3 h-3 stroke-[3]" />}
                           </div>
-                          <div className="flex-1 min-w-0">
-                            <span className="font-semibold block truncate">{svc.name}</span>
-                            {svc.description && (
-                              <span className="text-[11px] text-[#5f6368] block leading-snug line-clamp-1 mt-0.5">
-                                {svc.description}
-                              </span>
-                            )}
-                          </div>
+                          <span className="flex-1 min-w-0 font-semibold truncate">{svc.name}</span>
                         </button>
                       );
                     })}
